@@ -1,6 +1,10 @@
 import { StackContext, Api, EventBus } from "sst/constructs";
+import {  getTata } from "@my-sst-app/helpers";
+import {  getToto } from "@my-sst-app/helpers";
 
 export function API({ stack }: StackContext) {
+  console.log("getToto", getToto());
+  console.log("getTata", getTata());
   const bus = new EventBus(stack, "bus", {
     defaults: {
       retries: 10,

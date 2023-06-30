@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@my-sst-app/helpers': workspace:^0.0.0
       '@tsconfig/node16': ^16.1.0
       '@types/node': '16'
       aws-cdk-lib: 2.84.0
@@ -11,6 +12,7 @@ importers:
       sst: ^2.17.6
       typescript: ^5.1.6
     devDependencies:
+      '@my-sst-app/helpers': link:packages/helpers
       '@tsconfig/node16': 16.1.0
       '@types/node': 16.18.37
       aws-cdk-lib: 2.84.0_constructs@10.1.156
